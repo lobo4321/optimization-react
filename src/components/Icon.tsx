@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 
 interface IconProps {
   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
@@ -6,7 +6,6 @@ interface IconProps {
 }
 
 export function Icon(props: IconProps) {
-
   switch (props.name) {
     case 'action':
       return (
@@ -50,3 +49,4 @@ export function Icon(props: IconProps) {
       );
   }
 }
+
